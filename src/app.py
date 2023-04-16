@@ -35,6 +35,9 @@ class App:
 
 
     def onStop(self):
+        if(len(self.threadManager.threads) == 0):
+            self.window.destroy()
+        
         self.threadManager.stopLastThread()
         self.updateThreadList()
 
