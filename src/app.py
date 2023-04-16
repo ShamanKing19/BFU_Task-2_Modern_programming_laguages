@@ -7,7 +7,7 @@ class App:
     height = 400
 
 
-    def __init__(self):
+    def run(self):
         self.threadManager = ThreadManager()
         self.window = self.createWindow()
         
